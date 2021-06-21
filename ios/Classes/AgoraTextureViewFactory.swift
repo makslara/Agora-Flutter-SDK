@@ -44,7 +44,7 @@ class TextureRender: NSObject, FlutterTexture, AgoraVideoSinkProtocol {
         }
     }
 
-    func release() {
+    func Release() {
         textureRegistry?.unregisterTexture(id!)
         channel?.setMethodCallHandler(nil)
     }
@@ -147,6 +147,6 @@ class AgoraTextureViewFactory: NSObject {
     }
 
     static func destroyTextureRender(_ id: Int64) {
-        renders.removeValue(forKey: id)?.release()
+        renders.removeValue(forKey: id)?.Release()
     }
 }

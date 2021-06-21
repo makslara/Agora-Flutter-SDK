@@ -1,5 +1,5 @@
 @JS()
-library agora_rtc_engine;
+library agora_rtc_engine_web;
 
 import 'dart:async';
 import 'dart:convert';
@@ -9,7 +9,6 @@ import 'dart:convert';
 // package as the core of your plugin.
 // ignore: avoid_web_libraries_in_flutter
 import 'dart:html';
-import 'dart:js';
 import 'dart:ui' as ui;
 
 import 'package:agora_rtc_engine/src/enums.dart';
